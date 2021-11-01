@@ -28,7 +28,23 @@ public class SpawnPoint : MonoBehaviour
     //Linh di chuyen tren duong thang
     private Pathway path;
     //Wave gan nhat
+    private Wave nextWave;
+    // Do tre bo dem
+    private float counter;
+    // Wave da bat dau
+    private bool waveInProgress;
+    // Danh sach xuat hien quai sinh ra
+    private List<GameObject> enemyPrefabs;
+    // Buffer with active spawned enemies
+    private List<GameObject> activeEnemies = new List<GameObject>();
 
+	void Awake()
+	{
+        path = GetComponentInParent<Pathway>();
+        // Load enemies prefabs from specified directory
+        enemyPrefabs = Resources.LoadAll<GameObject>(enemiesPrefabsFolder).ToList();
+        Debug.Assert((path != null) && (enemyPrefabs != null), "Wrong initial parameters");
+    }
     void Start()
     {
         
