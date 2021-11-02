@@ -6,11 +6,24 @@ public class Turret : MonoBehaviour
 {
     //dat vi tri quai la muc tieu
     public Transform target;
+    
+    [Header("thuoc tinh")]
     //dat khoang cach tru la float
     public float range;
+    //Toc do ban
+    public float fireRate = 1f;
+    //Thoi gian ban fire hoi
+    private float fireCountdown = 0f;
+
+    [Header("Cai dat")]
     //Dat tag quai vat la Enemy
     public string enemyTag = "Enemy";
-    // Start is called before the first frame update
+    //Vat the dan
+    public GameObject bulletprefab;
+    //vi tri ban
+    public Transform firepoint;
+    
+
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
@@ -47,7 +60,25 @@ public class Turret : MonoBehaviour
     {
         if (target == null)
             return;
+
+        if(fireCountdown <= 0f)
+		{
+            Shoot();
+            fireCountdown = 1f / fireRate;
+		}
+        fireCountdown -= Time.deltaTime;
     }
+
+    void Shoot()
+	{
+        GameObject bulletGo = (GameObject)Instantiate(bulletprefab, firepoint.position, firepoint.rotation);
+        Bullet bullet = bulletGo.GetComponent<Bullet>();
+
+        if(bullet != null)
+		{
+            bullet.Seek(target);
+		}
+	}
 
     //Ve tam danh cua tru
 	void OnDrawGizmosSelected()
