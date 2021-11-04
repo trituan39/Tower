@@ -11675,6 +11675,7 @@ GameObject:
   - component: {fileID: 737601583}
   - component: {fileID: 737601584}
   - component: {fileID: 737601585}
+  - component: {fileID: 737601586}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -11710,7 +11711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 9110234180743931941, guid: 4bfd60c41a5df88438e01d0e49234742, type: 3}
   spawnPoint: {fileID: 648685787}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 10
   waveCountDownText: {fileID: 1651788381}
 --- !u!114 &737601582
 MonoBehaviour:
@@ -11739,7 +11740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 20
-  StartLives: 30
+  StartLives: 1
 --- !u!114 &737601584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11766,6 +11767,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   livesText: {fileID: 441852194}
+--- !u!114 &737601586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737601579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d4318d86a28c5f4da52f9d83e214b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &741085584
 GameObject:
   m_ObjectHideFlags: 0
