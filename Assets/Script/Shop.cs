@@ -11,15 +11,15 @@ public class Shop : MonoBehaviour
 	/// <summary>
 	/// Tao Mua tower
 	/// </summary>
-	public void PurchaseTowerItem()
+	public void PurchaseTower1Item()
 	{
-		buildManager.SetTurretToBuild(buildManager.standardTurretPrefabs);
+		buildManager.SetTurretToBuild(buildManager.Turret1Prefabs);
 	}
 	/// <summary>
 	/// Tao Mua another tower
 	/// </summary>
-	public void PurchaseAnotherTowerItem()
+	public void PurchaseTower2Item()
 	{
-		buildManager.SetTurretToBuild(buildManager.anotherTurretPrefabs);
+		buildManager.SetTurretToBuild(buildManager.Turret2Prefabs);
 	}
 }

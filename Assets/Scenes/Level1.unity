@@ -11777,8 +11777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497a18f2f9a5e2146a91f5240e27e421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardTurretPrefabs: {fileID: 8796418268712843343, guid: f9193e4c2f183754abf837162ad9de4f, type: 3}
-  anotherTurretPrefabs: {fileID: 0}
+  Turret1Prefabs: {fileID: 8796418268712843343, guid: f9193e4c2f183754abf837162ad9de4f, type: 3}
+  Turret2Prefabs: {fileID: 697847954852368146, guid: 069577a7c3ab35e4092576d914a5d8fe, type: 3}
 --- !u!1 &741085584
 GameObject:
   m_ObjectHideFlags: 0
@@ -11962,6 +11962,7 @@ GameObject:
   - component: {fileID: 773148434}
   - component: {fileID: 773148433}
   - component: {fileID: 773148432}
+  - component: {fileID: 773148435}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -12052,6 +12053,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 773148430}
   m_CullTransparentMesh: 1
+--- !u!114 &773148435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773148430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1a6ff156e5f2540a96f73491fef363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &779982439
 GameObject:
   m_ObjectHideFlags: 0
@@ -19499,9 +19512,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 773148431}
     m_Modifications:
+    - target: {fileID: 3951348734731507260, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 773148435}
+    - target: {fileID: 3951348734731507260, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PurchaseTower2Item
+      objectReference: {fileID: 0}
     - target: {fileID: 3951348734731507262, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
       propertyPath: m_Name
-      value: TowerItem (1)
+      value: 'Tower2Item '
       objectReference: {fileID: 0}
     - target: {fileID: 3951348734731507263, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
       propertyPath: m_Pivot.x
@@ -30531,6 +30552,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1806732520346841581
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.10121381
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.3855186
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967591035661652107, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
+      propertyPath: m_Name
+      value: BulletBom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
 --- !u!1001 &3951348735393091034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30538,6 +30616,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 773148431}
     m_Modifications:
+    - target: {fileID: 3951348734731507260, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 773148435}
+    - target: {fileID: 3951348734731507260, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PurchaseTower1Item
+      objectReference: {fileID: 0}
     - target: {fileID: 3951348734731507262, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
       propertyPath: m_Name
       value: TowerItem
