@@ -32,8 +32,20 @@ public class BuildManager : MonoBehaviour
 
 	public void BuildTurretOn(TowerPlace towerPlace)
 	{
+		//Tra ve stat va tra so tien neu ko thi ko dat tower
+		if(PlayerStat.Money < turretToBuild.cost)
+		{
+			Debug.Log("Not enough money!");
+			return;
+		}
+		//Giam so tien sau khi dat tru
+		PlayerStat.Money -= turretToBuild.cost;
+
 		GameObject turret = (GameObject)Instantiate(turretToBuild.prefabs, towerPlace.GetBuildPosition(), Quaternion.identity) ;
 		towerPlace.turret = turret;
+
+		//bao so tien con lai
+		Debug.Log("Turret build! Money left:"+ PlayerStat.Money);
 	}
 	//Tao noi dat turret
 	public void SelectTurretToBuild(TurretBlueprint turret)

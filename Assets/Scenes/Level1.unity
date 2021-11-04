@@ -11728,6 +11728,7 @@ GameObject:
   - component: {fileID: 737601580}
   - component: {fileID: 737601581}
   - component: {fileID: 737601582}
+  - component: {fileID: 737601583}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -11779,6 +11780,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Turret1Prefabs: {fileID: 8796418268712843343, guid: f9193e4c2f183754abf837162ad9de4f, type: 3}
   Turret2Prefabs: {fileID: 697847954852368146, guid: 069577a7c3ab35e4092576d914a5d8fe, type: 3}
+--- !u!114 &737601583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737601579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53333d1a4459da04d8ceee380f3c5df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 20
 --- !u!1 &741085584
 GameObject:
   m_ObjectHideFlags: 0
@@ -12070,7 +12084,7 @@ MonoBehaviour:
     cost: 5
   Tower2:
     prefabs: {fileID: 697847954852368146, guid: 069577a7c3ab35e4092576d914a5d8fe, type: 3}
-    cost: 5
+    cost: 10
 --- !u!1 &779982439
 GameObject:
   m_ObjectHideFlags: 0
@@ -19524,7 +19538,7 @@ PrefabInstance:
       objectReference: {fileID: 773148435}
     - target: {fileID: 3951348734731507260, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseTower2Item
+      value: SelectTower2Item
       objectReference: {fileID: 0}
     - target: {fileID: 3951348734731507261, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
       propertyPath: m_Sprite
@@ -30575,7 +30589,7 @@ PrefabInstance:
       objectReference: {fileID: 773148435}
     - target: {fileID: 3951348734731507260, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseTower1Item
+      value: SelectTower1Item
       objectReference: {fileID: 0}
     - target: {fileID: 3951348734731507262, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
       propertyPath: m_Name
