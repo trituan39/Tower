@@ -30,6 +30,9 @@ public class BuildManager : MonoBehaviour
 	// noi co the dat thap
 	public bool CanBuilt { get { return turretToBuild != null; } }
 
+	// Tra ve khi qua tien
+	public bool HasMoney { get { return PlayerStat.Money >= turretToBuild.cost; } }
+
 	public void BuildTurretOn(TowerPlace towerPlace)
 	{
 		//Tra ve stat va tra so tien neu ko thi ko dat tower

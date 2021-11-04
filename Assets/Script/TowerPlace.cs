@@ -7,6 +7,8 @@ public class TowerPlace : MonoBehaviour
 {
 	//goi mau bao phu
 	public Color hoverColor;
+	//goi mau khi ko du tien mua tower
+	public Color notEnoughMoneyColor;
 
 	[Header("Optional")]
 	// tao vi tri dat tru 
@@ -43,7 +45,18 @@ public class TowerPlace : MonoBehaviour
 		//Neu ko co vat the thi tra ve
 		if (!buildManager.CanBuilt)
 			return;
-			
+		//Neu du tien thi mau hover ko du thi mau notEnoughMoneyColor
+		if (buildManager.HasMoney)
+		{
+			//khi nhan vao no doi mau 
+			rend.material.color = hoverColor;
+		}
+		else
+		{
+			//Cho mau ko the dat
+			rend.material.color = notEnoughMoneyColor;
+		}
+
 		if (turret != null)
 		{
 			Debug.Log("Can't build");
@@ -56,12 +69,21 @@ public class TowerPlace : MonoBehaviour
 	{
 		//Su dung event system de ko bi nhap trung lap vat the vao map
 		if (EventSystem.current.IsPointerOverGameObject())
-			return;
+			return; 
 		//Neu ko co vat the thi tra ve
 		if (buildManager.CanBuilt)
-			return;
-		//khi nhan vao no doi mau 
-		rend.material.color = hoverColor;
+			return; 
+
+		//Neu du tien thi mau hover ko du thi mau notEnoughMoneyColor
+		if (buildManager.HasMoney)
+		{ 
+			//khi nhan vao no doi mau 
+			rend.material.color = hoverColor;
+		}else
+		{
+			//Cho mau ko the dat
+			rend.material.color = notEnoughMoneyColor;
+		}
 	}
 	void OnMouseExit()
 	{
