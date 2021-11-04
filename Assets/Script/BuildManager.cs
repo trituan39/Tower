@@ -14,9 +14,9 @@ public class BuildManager : MonoBehaviour
 		instance = this;
 	}
 
-	// vat the thap tieu chuan
+	// vat the thap tieu chuan 1
 	public GameObject Turret1Prefabs;
-
+	// vat the thap tieu chuan 2
 	public GameObject Turret2Prefabs;
 
 	//Vi du dat tower
@@ -25,14 +25,18 @@ public class BuildManager : MonoBehaviour
 		turretToBuild = standardTurretPrefabs; 
 	}*/
 
-	private GameObject turretToBuild;
+	private TurretBlueprint turretToBuild;
+	
+	// noi co the dat thap
+	public bool CanBuilt { get { return turretToBuild != null; } }
 
-    public GameObject GetTurretToBuild()
+	public void BuildTurretOn(TowerPlace towerPlace)
 	{
-		return turretToBuild;
+		GameObject turret = (GameObject)Instantiate(turretToBuild.prefabs, towerPlace.GetBuildPosition(), Quaternion.identity) ;
+		towerPlace.turret = turret;
 	}
-
-	public void SetTurretToBuild(GameObject turret)
+	//Tao noi dat turret
+	public void SelectTurretToBuild(TurretBlueprint turret)
 	{
 		turretToBuild = turret;
 	}

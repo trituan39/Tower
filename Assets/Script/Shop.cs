@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+	public TurretBlueprint Tower1;
+	public TurretBlueprint Tower2;
+
 	BuildManager buildManager;
 	void Start()
 	{
@@ -11,15 +14,15 @@ public class Shop : MonoBehaviour
 	/// <summary>
 	/// Tao Mua tower
 	/// </summary>
-	public void PurchaseTower1Item()
+	public void SelectTower1Item()
 	{
-		buildManager.SetTurretToBuild(buildManager.Turret1Prefabs);
+		buildManager.SelectTurretToBuild(Tower1);
 	}
 	/// <summary>
 	/// Tao Mua another tower
 	/// </summary>
-	public void PurchaseTower2Item()
+	public void SelectTower2Item()
 	{
-		buildManager.SetTurretToBuild(buildManager.Turret2Prefabs);
+		buildManager.SelectTurretToBuild(Tower2);
 	}
 }
