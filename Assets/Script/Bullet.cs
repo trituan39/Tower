@@ -7,9 +7,11 @@ public class Bullet : MonoBehaviour
 	//vi tri muc tieu
 	private Transform target;
 	[SerializeField]
-	public float speed;
+	float speed;
 	[SerializeField]
-	public float explosionRadious;
+	float explosionRadious;
+	[SerializeField]
+	int damage;
 
 	//tim muc tieu
 	public void Seek (Transform _target)
@@ -68,7 +70,12 @@ public class Bullet : MonoBehaviour
 
 	void Damage(Transform enemy)
 	{
-		Destroy(enemy.gameObject);
+		Enemy e = enemy.GetComponent<Enemy>();
+
+		if(e != null)
+		{
+			e.TakeDamage(damage);
+		}
 	}
 
 	void OnDrawGizmosSelected()

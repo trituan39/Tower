@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   explosionRadious: 1
+  damage: 5
 --- !u!64 &-8845107649064062516
 MeshCollider:
   m_ObjectHideFlags: 0
