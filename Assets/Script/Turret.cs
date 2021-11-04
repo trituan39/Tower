@@ -83,7 +83,7 @@ public class Turret : MonoBehaviour
     //Ve tam danh cua tru
 	void OnDrawGizmosSelected()
 	{
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, range);
 	}
 }

@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
 	private Transform target;
 	[SerializeField]
 	public float speed;
+	[SerializeField]
+	public float explosionRadious;
 
 	//tim muc tieu
 	public void Seek (Transform _target)
@@ -37,6 +39,41 @@ public class Bullet : MonoBehaviour
 
 	void HitTarget()
 	{
+		//Tao kha nang no cua bullet bom
+		if(explosionRadious>0f)
+		{
+			Explode();
+		}
+		//ko thi dame don muc tieu
+		else
+		{
+			Damage(target);
+		}
 		Destroy(gameObject);
+	}
+
+	void Explode()
+	{
+		//Xac dinh collider 
+		Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadious);
+
+		foreach(Collider collider in colliders)
+		{
+			if(collider.tag == "Enemy")
+			{
+				Damage(collider.transform);
+			}
+		}
+	}
+
+	void Damage(Transform enemy)
+	{
+		Destroy(enemy.gameObject);
+	}
+
+	void OnDrawGizmosSelected()
+	{
+		Gizmos.color = Color.red;
+		Gizmos.DrawWireSphere(transform.position, explosionRadious);
 	}
 }

@@ -19520,6 +19520,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PurchaseTower2Item
       objectReference: {fileID: 0}
+    - target: {fileID: 3951348734731507261, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7c9cc852bcc3846469a18606c58c8860, type: 3}
     - target: {fileID: 3951348734731507262, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
       propertyPath: m_Name
       value: 'Tower2Item '
@@ -30552,63 +30556,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1806732520346841581
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.10121381
-      objectReference: {fileID: 0}
-    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.3855186
-      objectReference: {fileID: 0}
-    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3504186377060790838, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967591035661652107, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
-      propertyPath: m_Name
-      value: BulletBom
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
 --- !u!1001 &3951348735393091034
 PrefabInstance:
   m_ObjectHideFlags: 0
