@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5241261994875763111}
   - component: {fileID: 1400463654885373786}
   - component: {fileID: -9052167244331528925}
+  - component: {fileID: -3217575708961020696}
   m_Layer: 0
   m_Name: Attacking_000
   m_TagString: Enemy
@@ -99,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   health: 4
-  value: 2
+  worth: 2
 --- !u!135 &-9052167244331528925
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -113,3 +114,15 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.8333333
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-3217575708961020696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890845001833441347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1fa22e33934264488db5efa4fbdd53e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
