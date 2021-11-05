@@ -64,7 +64,6 @@ public class TowerPlace : MonoBehaviour
 		}
 		buildManager.BuildTurretOn(this);
 	}
-
 	void OnMouseEnter()
 	{
 		//Su dung event system de ko bi nhap trung lap vat the vao map
