@@ -1,16 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private bool gameEnded = false;
+    //Tao bien GameIsOver
+    public static bool GameIsOver;
 
-    // Update is called once per frame
-    void Update()
+    //Vat the bien gameOverUI
+    public GameObject gameOverUI;
+
+	void Start()
+	{
+        //Dat Game da xoong la false
+        GameIsOver = false;
+	}
+	// Update is called once per frame
+	void Update()
     {
-        if (gameEnded)
+        //Khi gameEnd thi tra ve true
+        if (GameIsOver)
             return;
+
+        //neu mau khong con thi tra ve gameEnded
         if(PlayerStat.Lives <= 0)
 		{
             EndGame();
@@ -18,7 +28,8 @@ public class GameManager : MonoBehaviour
     }
     void EndGame()
 	{
-        gameEnded = true;
-        Debug.Log("Game over!");
+        GameIsOver = true;
+
+        gameOverUI.SetActive(true);
 	}
 }

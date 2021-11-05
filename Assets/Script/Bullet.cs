@@ -21,7 +21,13 @@ public class Bullet : MonoBehaviour
 
 	void Update()
 	{
-		if(target== null)
+		if (GameManager.GameIsOver)
+		{
+			this.enabled = false;
+			return;
+		}
+
+		if (target== null)
 		{
 			Destroy(gameObject);
 			return;

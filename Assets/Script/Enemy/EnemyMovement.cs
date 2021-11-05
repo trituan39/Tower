@@ -23,8 +23,15 @@ public class EnemyMovement : MonoBehaviour
 	}
 	void Update()
 	{
+
 		Vector2 dir = target.position - transform.position;
 		transform.Translate(dir.normalized * enemy.speed * Time.deltaTime, Space.World);
+
+		if(GameManager.GameIsOver)
+		{
+			this.enabled = false;
+			return;
+		}
 
 		if (Vector2.Distance(transform.position, target.position) <= 0.2f)
 		{

@@ -19,7 +19,13 @@ public class WaveSpawner : MonoBehaviour
 
 	void Update()
 	{
-		if(countdown <= 0f)
+		if (GameManager.GameIsOver)
+		{
+			this.enabled = false;
+			return;
+		}
+
+		if (countdown <= 0f)
 		{
 			StartCoroutine(SpawnWave());
 			countdown = timeBetweenWaves;
