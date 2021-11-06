@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class TowerPlaceUI : MonoBehaviour
 {
 	public GameObject ui;
-
+	//Upgrade Button & Text
 	public Text upgradeCost;
 	public Button upgradeButton;
+	//Sell Button & Text
+	public Text sellAmount;
 
-    private TowerPlace target;
-
-
+	private TowerPlace target;
 
     public void SetTarget(TowerPlace _target)
 	{
@@ -30,6 +30,8 @@ public class TowerPlaceUI : MonoBehaviour
 			upgradeCost.text = "DONE";
 			upgradeButton.interactable = false;
 		}
+
+		sellAmount.text = "$" + target.turretBlueprint.GetSellAmount();
 			
 		ui.SetActive(true);
 	}
@@ -41,6 +43,11 @@ public class TowerPlaceUI : MonoBehaviour
 	public void Upgrade()
 	{
 		target.UpgradeTurret();
+		BuildManager.instance.DeselectTowerPlace();
+	}
+	public void Sell()
+	{
+		target.SellTurret();
 		BuildManager.instance.DeselectTowerPlace();
 	}
 }

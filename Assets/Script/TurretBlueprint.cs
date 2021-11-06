@@ -15,4 +15,8 @@ public class TurretBlueprint
     //So tien Upgrade
     public int upgradeCost;
 
+    public int GetSellAmount()
+	{
+        return (cost+upgradeCost)/2;
+	}
 }

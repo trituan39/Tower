@@ -5255,7 +5255,7 @@ GameObject:
   - component: {fileID: 324225389}
   - component: {fileID: 324225388}
   m_Layer: 5
-  m_Name: Earn
+  m_Name: Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25208,6 +25208,7 @@ MonoBehaviour:
   ui: {fileID: 1629329042}
   upgradeCost: {fileID: 1696545737}
   upgradeButton: {fileID: 471681500}
+  sellAmount: {fileID: 324225388}
 --- !u!1 &1743280616
 GameObject:
   m_ObjectHideFlags: 0
@@ -28277,7 +28278,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1743160520}
         m_TargetAssemblyTypeName: TowerPlaceUI, Assembly-CSharp
-        m_MethodName: Upgrade
+        m_MethodName: Sell
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29896,7 +29897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3951348735631068079, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
       propertyPath: m_Text
-      value: $5
+      value: $3
       objectReference: {fileID: 0}
     - target: {fileID: 3951348735631068079, guid: ab662fa418ea5bb469e8cd7cee78fdc0, type: 3}
       propertyPath: m_FontData.m_Font
@@ -30086,7 +30087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6419970042675438284, guid: d384681031c693644b97a1f0a9601921, type: 3}
       propertyPath: m_Text
-      value: $10
+      value: $5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d384681031c693644b97a1f0a9601921, type: 3}

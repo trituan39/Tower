@@ -115,6 +115,16 @@ public class TowerPlace : MonoBehaviour
 		//thanh da dc nang cap
 		Debug.Log("Turret upgrade!");
 	}
+	public void SellTurret()
+	{
+		//cong them tien vao ui
+		PlayerStat.Money += turretBlueprint.GetSellAmount();
+
+		//huy thanh
+		Destroy(turret);
+		//dat vi tri xay nha tro lai null
+		turretBlueprint = null;
+	}
 
 	void OnMouseEnter()
 	{

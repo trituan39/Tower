@@ -19,12 +19,6 @@ public class BuildManager : MonoBehaviour
 	// vat the thap tieu chuan 2
 	public GameObject Turret2Prefabs;
 
-	//Vi du dat tower
-	/*void Start()
-	{
-		turretToBuild = standardTurretPrefabs; 
-	}*/
-
 	//tra ve TurretBlueprint
 	private TurretBlueprint turretToBuild;
 
