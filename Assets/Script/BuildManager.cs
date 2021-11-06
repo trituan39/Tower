@@ -25,13 +25,20 @@ public class BuildManager : MonoBehaviour
 		turretToBuild = standardTurretPrefabs; 
 	}*/
 
+	//tra ve TurretBlueprint
 	private TurretBlueprint turretToBuild;
+
+	//tra ve towerplace
+	private TowerPlace selectTowerPlace;
+
+	//Tra ve TowerplaceUI
+	public TowerPlaceUI towerPlaceUI;
 	
 	// noi co the dat thap
 	public bool CanBuilt { get { return turretToBuild != null; } }
 
 	// Tra ve khi qua tien
-	public bool HasMoney { get { return PlayerStat.Money >= turretToBuild.cost; } }
+	public bool HasMoney { get { return PlayerStat.Money >= turretToBuild.cost; }}
 
 	public void BuildTurretOn(TowerPlace towerPlace)
 	{
@@ -44,15 +51,37 @@ public class BuildManager : MonoBehaviour
 		//Giam so tien sau khi dat tru
 		PlayerStat.Money -= turretToBuild.cost;
 
-		GameObject turret = (GameObject)Instantiate(turretToBuild.prefabs, towerPlace.GetBuildPosition(), Quaternion.identity) ;
+		GameObject turret = (GameObject)Instantiate(turretToBuild.prefabs, towerPlace.GetBuildPosition(), Quaternion.identity);
 		towerPlace.turret = turret;
 
 		//bao so tien con lai
 		Debug.Log("Turret build! Money left:"+ PlayerStat.Money);
 	}
+
+	//Chon vi tri Dat tower
+	public void SelectTowerPlace(TowerPlace towerPlace)
+	{
+		if(selectTowerPlace == towerPlace)
+		{
+			DeselectTowerPlace();
+			return;
+		}
+		selectTowerPlace = towerPlace;
+		turretToBuild = null;
+
+		towerPlaceUI.SetTarget(towerPlace);
+	}
+
+	public void DeselectTowerPlace()
+	{
+		selectTowerPlace = null;
+		towerPlaceUI.Hide();
+	}
+
 	//Tao noi dat turret
 	public void SelectTurretToBuild(TurretBlueprint turret)
 	{
 		turretToBuild = turret;
+		DeselectTowerPlace();
 	}
 }
