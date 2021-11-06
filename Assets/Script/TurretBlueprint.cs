@@ -10,4 +10,9 @@ public class TurretBlueprint
     //ghi gia tien
     public int cost;
 
+    //Vat the thanh dc nang cap
+    public GameObject upgradedPrefab;
+    //So tien Upgrade
+    public int upgradeCost;
+
 }

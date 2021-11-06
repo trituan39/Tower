@@ -10,9 +10,13 @@ public class TowerPlace : MonoBehaviour
 	//goi mau khi ko du tien mua tower
 	public Color notEnoughMoneyColor;
 
-	[Header("Optional")]
+	[HideInInspector]
 	// tao vi tri dat tru 
 	public GameObject turret;
+	[HideInInspector]
+	public TurretBlueprint turretBlueprint;
+	[HideInInspector]
+	public bool isUpgraded = false;
 
 	//dat rend tu spriterender
 	private SpriteRenderer rend;
@@ -64,8 +68,54 @@ public class TowerPlace : MonoBehaviour
 		if (!buildManager.CanBuilt)
 			return;
 
-		buildManager.BuildTurretOn(this);
+		BuildTurret(buildManager.GetTurretToBuild());
 	}
+
+	void BuildTurret(TurretBlueprint blueprint)
+	{
+		//Tra ve stat va tra so tien neu ko thi ko dat tower
+		if (PlayerStat.Money < blueprint.cost)
+		{
+			Debug.Log("Not enough money!");
+			return;
+		}
+		//Giam so tien sau khi dat tru
+		PlayerStat.Money -= blueprint.cost;
+
+		//Xac dinh vi tri de xay thanh
+		GameObject _turret = (GameObject)Instantiate(blueprint.prefabs, GetBuildPosition(), Quaternion.identity);
+		turret = _turret;
+
+		turretBlueprint = blueprint;
+
+		//thanh da dc xay
+		Debug.Log("Turret build!");
+	}
+
+	public void UpgradeTurret()
+	{
+		//Tra ve stat va tra so tien neu ko thi ko dat tower
+		if (PlayerStat.Money < turretBlueprint.upgradeCost)
+		{
+			Debug.Log("Not enough money to upgrade!");
+			return;
+		}
+		//Giam so tien sau khi dat tru
+		PlayerStat.Money -= turretBlueprint.upgradeCost;
+
+		//Xoa thanh cu 
+		Destroy(turret);
+
+		//Xay thanh moi dc nang cap
+		GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
+		turret = _turret;
+
+		isUpgraded = true;
+
+		//thanh da dc nang cap
+		Debug.Log("Turret upgrade!");
+	}
+
 	void OnMouseEnter()
 	{
 		//Su dung event system de ko bi nhap trung lap vat the vao map
