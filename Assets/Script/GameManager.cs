@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,6 +9,9 @@ public class GameManager : MonoBehaviour
 
     //Vat the bien gameOverUI
     public GameObject gameOverUI;
+
+    public GameObject comleteLevelUI;
+     
 
 	void Start()
 	{
@@ -26,10 +31,17 @@ public class GameManager : MonoBehaviour
             EndGame();
 		}
     }
+
     void EndGame()
 	{
         GameIsOver = true;
-
+        //Game ket thuc
         gameOverUI.SetActive(true);
 	}
+
+    public void WinLevel()
+	{
+        GameIsOver = true;
+        comleteLevelUI.SetActive(true);
+    }
 }

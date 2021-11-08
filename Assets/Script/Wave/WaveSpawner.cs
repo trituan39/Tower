@@ -16,13 +16,16 @@ public class WaveSpawner : MonoBehaviour
 	// thoi gian giua cac wave
     public float timeBetweenWaves = 5f;
 	// thoi gian dem nguoc ra quai khi bat dau wave
-	private float countdown = 2f;
+	private float countdown = 3f;
 
 	//thoi gian dem nguoc wave tiep theo
 	public Text waveCountdownText;
 
 	//Text rounds
 	public Text roundsText;
+
+	//goi gamemanager
+	public GameManager gameManager;
 
 	// dat wax hien tai la 1
 	private int waveIndex = 0;
@@ -37,6 +40,11 @@ public class WaveSpawner : MonoBehaviour
 		if (EnemiesAlive>0)
 		{
 			return;
+		}
+		if (waveIndex == waves.Length)
+		{
+			gameManager.WinLevel();
+			this.enabled = false;
 		}
 		if (countdown <= 0f)
 		{
@@ -53,9 +61,12 @@ public class WaveSpawner : MonoBehaviour
 	}
 
 	IEnumerator SpawnWave()
-	{		
-		Wave wave = waves[waveIndex];
+	{
 		PlayerStat.Rounds++;
+
+		Wave wave = waves[waveIndex];
+		
+		EnemiesAlive = wave.count;
 
 		for (int i = 0; i< wave.count;i++)
 		{
@@ -64,16 +75,11 @@ public class WaveSpawner : MonoBehaviour
 		}
 		waveIndex++;
 
-		if (waveIndex == waves.Length)
-		{
-			Debug.Log("Level Won!");
-			this.enabled = false;
-		}
+		
 	}
 	void SpawnEnemy(GameObject enemy)
 	{
 		roundsText.text = "Wave: " + PlayerStat.Rounds.ToString();
-		Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
-		EnemiesAlive++;		
+		Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);				
 	}
 }
