@@ -39,7 +39,10 @@ public class Enemy : MonoBehaviour
 	//Chet
 	void Die()
 	{
-		PlayerStat.Money += worth; 
+		PlayerStat.Money += worth;
+
+		WaveSpawner.EnemiesAlive--;
+
 		Destroy(gameObject);
 	}
 }
