@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
+	//Toc do ban dau
+	public float startSpeed = 1f;
 	[HideInInspector]
 	//Toc do quai
-    public float speed = 0.5f;
+	public float speed;
 	//Mau bat dau
 	public int startHealth;
 	//Mau
@@ -22,6 +24,7 @@ public class Enemy : MonoBehaviour
 
 	void Start()
 	{
+		speed = startSpeed;
 		health = startHealth;
 	}
 
@@ -36,6 +39,11 @@ public class Enemy : MonoBehaviour
 		{
 			Die();
 		}
+	}
+	
+	public void Slow(float pct)
+	{
+		speed = startSpeed * (1f - pct);
 	}
 
 	//Chet

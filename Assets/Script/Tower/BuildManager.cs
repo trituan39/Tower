@@ -14,11 +14,6 @@ public class BuildManager : MonoBehaviour
 		instance = this;
 	}
 
-	// vat the thap tieu chuan 1
-	public GameObject Turret1Prefabs;
-	// vat the thap tieu chuan 2
-	public GameObject Turret2Prefabs;
-
 	//tra ve TurretBlueprint
 	private TurretBlueprint turretToBuild;
 
@@ -31,7 +26,7 @@ public class BuildManager : MonoBehaviour
 	// noi co the dat thap
 	public bool CanBuilt { get { return turretToBuild != null; } }
 
-	// Tra ve khi qua tien
+	// Tra ve bien turretToBuild khi qua hoac bang tien
 	public bool HasMoney { get { return PlayerStat.Money >= turretToBuild.cost; }}
 
 	//Chon vi tri Dat tower

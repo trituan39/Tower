@@ -99,8 +99,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1047379059
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: acea48b2af61b5f46a49c1eb5c291eb9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   range: 2
+  bulletprefab: {fileID: 8162275860307718177, guid: a265b670de4e2d04caa87d3fa67990d0, type: 3}
   fireRate: 1
   enemyTag: Enemy
-  bulletprefab: {fileID: 8162275860307718177, guid: a265b670de4e2d04caa87d3fa67990d0, type: 3}
   firepoint: {fileID: 4271401213218459009}

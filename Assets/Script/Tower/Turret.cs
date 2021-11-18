@@ -7,9 +7,13 @@ public class Turret : MonoBehaviour
     //dat vi tri quai la muc tieu
     public Transform target;
     
-    [Header("thuoc tinh")]
+    [Header("General")]
     //dat khoang cach tru la float
     public float range;
+
+    [Header("Use Bullet(default)")]
+    //Vat the dan
+    public GameObject bulletprefab;
     //Toc do ban
     public float fireRate = 1f;
     //Thoi gian ban fire hoi
@@ -18,8 +22,6 @@ public class Turret : MonoBehaviour
     [Header("Cai dat")]
     //Dat tag quai vat la Enemy
     public string enemyTag = "Enemy";
-    //Vat the dan
-    public GameObject bulletprefab;
     //vi tri ban
     public Transform firepoint;
     

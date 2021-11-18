@@ -4,6 +4,7 @@ public class Shop : MonoBehaviour
 {
 	public TurretBlueprint Tower1;
 	public TurretBlueprint Tower2;
+	public TurretBlueprint Tower3;
 
 	BuildManager buildManager;
 	void Start()
@@ -24,5 +25,9 @@ public class Shop : MonoBehaviour
 	public void SelectTower2Item()
 	{
 		buildManager.SelectTurretToBuild(Tower2);
+	}
+	public void SelectTower3Item()
+	{
+		buildManager.SelectTurretToBuild(Tower3);
 	}
 }
