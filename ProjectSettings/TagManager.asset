@@ -51,3 +51,6 @@ TagManager:
   - name: UnitAndTower
     uniqueID: 3247588237
     locked: 0
+  - name: Bullet
+    uniqueID: 3126643565
+    locked: 0

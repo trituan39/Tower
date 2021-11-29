@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2148449418186088646}
   - component: {fileID: 519792495268389373}
   m_Layer: 0
-  m_Name: Arrow
+  m_Name: Arrow_Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,10 +71,10 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1168323731
-  m_SortingLayer: 1
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 39c3d174f0633fb459b2ec79a1146ed7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.022311574, g: 0.6886792, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -96,6 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63213783674bed1449a67449f71400d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 10
   explosionRadious: 0
-  damage: 3
+  damage: 5
