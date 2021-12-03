@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 3
+  range: 2
   bulletprefab: {fileID: 6967591035661652107, guid: fc2bbcdfa9c206143aeb3b8f22c8926d, type: 3}
   fireRate: 1
   enemyTag: Enemy
@@ -121,7 +121,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1047379059
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7c9cc852bcc3846469a18606c58c8860, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -15214,8 +15214,8 @@ MonoBehaviour:
   Tower3:
     prefabs: {fileID: 7397191422836917140, guid: b4ac5441b312e964fb8355462fec95fa, type: 3}
     cost: 7
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 7397191422836917140, guid: 5ae15b12d73da2a41b9866e82dcf4564, type: 3}
+    upgradeCost: 5
 --- !u!1 &779680547
 GameObject:
   m_ObjectHideFlags: 0
