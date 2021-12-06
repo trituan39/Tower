@@ -1,55 +1,37 @@
 fileFormatVersion: 2
-guid: 3f95db2ce887c0e4383ed79bb9af98f4
+guid: a10d147ae5ea7954483be6d80157c71d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -816586530402693068
-    second: death_scythe_0
+      213: 2650242802887809672
+    second: rpgcritters2_0
   - first:
-      213: -2403194280487748403
-    second: death_scythe_1
+      213: -9134702752911754332
+    second: rpgcritters2_1
   - first:
-      213: 5683029814127051225
-    second: death_scythe_2
+      213: 8338271107121680049
+    second: rpgcritters2_2
   - first:
-      213: -6291403953450515637
-    second: death_scythe_3
+      213: -6826057299893065980
+    second: rpgcritters2_3
   - first:
-      213: -7103039206447233694
-    second: death_scythe_4
+      213: -465483259209689849
+    second: rpgcritters2_4
   - first:
-      213: 933151600920832416
-    second: death_scythe_5
+      213: -4556660915178727136
+    second: rpgcritters2_5
   - first:
-      213: 8135243418180483315
-    second: death_scythe_6
+      213: 2375163830035922882
+    second: rpgcritters2_6
   - first:
-      213: 2776796023526787713
-    second: death_scythe_7
+      213: -6724764493119426821
+    second: rpgcritters2_7
   - first:
-      213: 3428776668661288532
-    second: death_scythe_8
+      213: -2712260544830849336
+    second: rpgcritters2_8
   - first:
-      213: 3516610550830817963
-    second: death_scythe_9
-  - first:
-      213: -8160806909033057244
-    second: death_scythe_10
-  - first:
-      213: 3675084787341649177
-    second: death_scythe_11
-  - first:
-      213: 3889796569517141861
-    second: death_scythe_12
-  - first:
-      213: 6127937861516030479
-    second: death_scythe_13
-  - first:
-      213: 5624277221788551987
-    second: death_scythe_14
-  - first:
-      213: -6566251763429363559
-    second: death_scythe_15
+      213: 4693167152333166507
+    second: rpgcritters2_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -187,13 +169,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: death_scythe_0
+      name: rpgcritters2_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 145
-        width: 40
-        height: 47
+        x: 17
+        y: 192
+        width: 30
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4309af680e6eaa4f0800000000000000
-      internalID: -816586530402693068
+      spriteID: 88ad9a2a9cd87c420800000000000000
+      internalID: 2650242802887809672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_scythe_1
+      name: rpgcritters2_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 145
-        width: 40
-        height: 47
+        x: 56
+        y: 192
+        width: 26
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,209 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dccf649d88326aed0800000000000000
-      internalID: -2403194280487748403
+      spriteID: 4ab79e37e340b3180800000000000000
+      internalID: -9134702752911754332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_scythe_2
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 145
-        width: 40
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d14ff6818d2ede40800000000000000
-      internalID: 5683029814127051225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_scythe_3
-      rect:
-        serializedVersion: 2
-        x: 152
-        y: 144
-        width: 39
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b430818007170b8a0800000000000000
-      internalID: -6291403953450515637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_scythe_4
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 96
-        width: 39
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2654a0aa97fec6d90800000000000000
-      internalID: -7103039206447233694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_scythe_5
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 96
-        width: 41
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a9297edf6833fc00800000000000000
-      internalID: 933151600920832416
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_scythe_6
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 96
-        width: 39
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f87bf559c036e070800000000000000
-      internalID: 8135243418180483315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_scythe_7
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 96
-        width: 38
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18a08047549298620800000000000000
-      internalID: 2776796023526787713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_scythe_8
+      name: rpgcritters2_2
       rect:
         serializedVersion: 2
         x: 9
-        y: 48
-        width: 39
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45e04b5b636759f20800000000000000
-      internalID: 3428776668661288532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_scythe_9
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 48
-        width: 41
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba269a70aa28dc030800000000000000
-      internalID: 3516610550830817963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_scythe_10
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 48
-        width: 39
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 424f782aa5dfebe80800000000000000
-      internalID: -8160806909033057244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_scythe_11
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 48
+        y: 146
         width: 37
-        height: 47
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -432,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 915e0f48426800330800000000000000
-      internalID: 3675084787341649177
+      spriteID: 1be04e4d46d77b370800000000000000
+      internalID: 8338271107121680049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_scythe_12
+      name: rpgcritters2_3
       rect:
         serializedVersion: 2
-        x: 11
-        y: 1
-        width: 38
-        height: 47
+        x: 55
+        y: 136
+        width: 28
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -453,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56f2a96fe555bf530800000000000000
-      internalID: 3889796569517141861
+      spriteID: 407696f3d09f441a0800000000000000
+      internalID: -6826057299893065980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_scythe_13
+      name: rpgcritters2_4
       rect:
         serializedVersion: 2
-        x: 62
-        y: 1
-        width: 38
-        height: 47
+        x: 18
+        y: 94
+        width: 33
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,20 +267,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f027451940fca0550800000000000000
-      internalID: 6127937861516030479
+      spriteID: 7055ae521754a89f0800000000000000
+      internalID: -465483259209689849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_scythe_14
+      name: rpgcritters2_5
       rect:
         serializedVersion: 2
-        x: 111
-        y: 1
-        width: 38
-        height: 47
+        x: 61
+        y: 100
+        width: 19
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -495,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33b0703a5527d0e40800000000000000
-      internalID: 5624277221788551987
+      spriteID: 0299dd43a0d73c0c0800000000000000
+      internalID: -4556660915178727136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_scythe_15
+      name: rpgcritters2_6
       rect:
         serializedVersion: 2
-        x: 162
-        y: 0
-        width: 36
-        height: 47
+        x: 17
+        y: 46
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -516,8 +309,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 990b2078fccffd4a0800000000000000
-      internalID: -6566251763429363559
+      spriteID: 2cfb5a45be646f020800000000000000
+      internalID: 2375163830035922882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpgcritters2_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 46
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfee475a256dca2a0800000000000000
+      internalID: -6724764493119426821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpgcritters2_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 13
+        width: 41
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cebc07976d1c5ad0800000000000000
+      internalID: -2712260544830849336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpgcritters2_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 12
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7995ad8aa712140800000000000000
+      internalID: 4693167152333166507
       vertices: []
       indices: 
       edges: []
